@@ -1,0 +1,8 @@
+#patrat {
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+
+  background-color: black;
+  display: block;
+}
