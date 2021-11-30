@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and hide</title>
+    <link rel="stylesheet" href="StergeAdaugaColoreaza.css">
+</head>
+<body>
+    <script >
+        function culoare(){
+            if(document.getElementById("patrat").style.backgroundColor === "black"){
+                document.getElementById("patrat").style.backgroundColor = "red";
+            }else{
+                document.getElementById("patrat").style.backgroundColor = "black";
+            }
+        }
+        function sterge(){
+            if(document.getElementById("patrat").style.display === 'none'){
+                document.getElementById("patrat").style.display = 'block';
+            }else{
+                document.getElementById("patrat").style.display = 'none';
+            }
+        }
+    </script>
+    <div id="patrat"></div>
+    <button onclick="culoare()">schimba culoarea</button>
+    <button onclick="sterge()">sterge/adauga</button>
+</body>
+</html>
+
